@@ -12,6 +12,11 @@ let check = document.getElementById("checkBlock");
 let signIn = document.getElementById("signInBlock");
 let content = document.getElementById("contentBlock");
 let register = document.getElementById("register");
+let regName = document.getElementById("regName");
+let regSurname = document.getElementById("regSurname");
+let regEmail = document.getElementById("regEmail");
+
+let contentText = document.getElementById("contentText");
 
 if (!signInBlock) {
   signIn.style.display = "none";
@@ -51,3 +56,9 @@ function openRegister() {
   console.log(registerBlock);
 }
 console.log(registerBlock);
+
+function registerBtn() {
+  register.style.display = "none";
+  content.style.display = "block";
+  contentText.textContent = `HI ${regName.value}, welcome to our service`;
+}

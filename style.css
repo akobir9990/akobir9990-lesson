@@ -3,9 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   background: #6a62d3;
+}
+input {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+}
+h1 {
+  margin: 5px 10px;
+  color: white;
+  font-family: sans-serif;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgb(193, 193, 193);
 }
 .wrapper {
   max-width: 1000px;
@@ -16,8 +34,9 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-#checkBlock button {
+button {
   padding: 10px 30px;
+  margin: 5px 10px;
   border: 2px solid white;
   border-radius: 10px;
   color: white;
@@ -32,32 +51,19 @@ body {
 }
 #register {
 }
-#signInBlock {
+#signInBlock,
+#register {
   width: 100%;
   padding: 40px 0;
-
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(5px);
-}
-#signInBlock input {
-  padding: 5px 10px;
-  margin: 5px 10px;
-  background: none;
-  border: 2px solid white;
-}
-#signInBlock input {
-  padding: 5px 10px;
-  margin: 5px 10px;
+  border: 4px solid white;
+  border-radius: 10px;
 }
 
 #user {
 }
 #passwd {
-}
-#register {
-  display: none;
 }
 #content {
 }
